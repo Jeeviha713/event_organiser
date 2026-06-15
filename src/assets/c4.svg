@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Smiley Events gallery placeholder 4">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#431407"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g4)"/>
+  <rect x="40" y="40" width="720" height="920" rx="40" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.28)"/>
+  <path d="M140 700 C280 470, 520 470, 670 700" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity="0.88"/>
+  <rect x="150" y="300" width="500" height="140" rx="24" fill="rgba(255,255,255,0.12)"/>
+  <text x="120" y="160" fill="#fff" font-size="52" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Catering Delight</text>
+  <text x="120" y="820" fill="#fff7ed" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Taste & Presentation</text>
+</svg>

@@ -1,0 +1,130 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-plum: var(--plum);
+  --color-beige: var(--beige);
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand: plum #482C3D, beige #C0B1A2, gold accent */
+  --plum: oklch(0.29 0.05 350);
+  --plum-deep: oklch(0.20 0.04 350);
+  --beige: oklch(0.74 0.025 65);
+  --beige-soft: oklch(0.92 0.018 70);
+  --gold: oklch(0.78 0.13 78);
+  --rose: oklch(0.72 0.12 15);
+
+  --background: oklch(0.97 0.01 70);
+  --foreground: oklch(0.22 0.04 350);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--foreground);
+  --primary: var(--plum);
+  --primary-foreground: oklch(0.97 0.015 70);
+  --secondary: var(--beige-soft);
+  --secondary-foreground: var(--plum);
+  --muted: oklch(0.94 0.012 70);
+  --muted-foreground: oklch(0.45 0.03 350);
+  --accent: var(--gold);
+  --accent-foreground: var(--plum-deep);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.86 0.02 65);
+  --input: oklch(0.88 0.02 65);
+  --ring: var(--plum);
+
+  --gradient-luxe: linear-gradient(135deg, oklch(0.29 0.05 350) 0%, oklch(0.40 0.06 350) 50%, oklch(0.78 0.13 78) 100%);
+  --gradient-beige: linear-gradient(180deg, oklch(0.97 0.01 70) 0%, oklch(0.88 0.025 65) 100%);
+  --shadow-stage: 0 30px 80px -20px oklch(0.29 0.05 350 / 0.35), 0 10px 30px -10px oklch(0.78 0.13 78 / 0.25);
+  --shadow-soft: 0 10px 40px -15px oklch(0.29 0.05 350 / 0.3);
+}
+
+.dark { color-scheme: dark; }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
+}
+
+@utility text-gradient-luxe {
+  background: var(--gradient-luxe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass {
+  background: color-mix(in oklab, white 70%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--plum) 12%, transparent);
+}
+
+@utility glass-dark {
+  background: color-mix(in oklab, var(--plum-deep) 60%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--gold) 25%, transparent);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(2deg); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 30s linear infinite; }
+.animate-glow { animation: glow-pulse 4s ease-in-out infinite; }

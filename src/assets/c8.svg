@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Smiley Events gallery placeholder 8">
+  <defs>
+    <linearGradient id="g8" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g8)"/>
+  <rect x="40" y="40" width="720" height="920" rx="40" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.28)"/>
+  <circle cx="300" cy="380" r="130" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="520" cy="620" r="180" fill="rgba(255,255,255,0.10)"/>
+  <text x="120" y="160" fill="#fff" font-size="52" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Golden Moments</text>
+  <text x="120" y="820" fill="#fff7ed" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Celebration Design</text>
+</svg>

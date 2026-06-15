@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Smiley Events gallery placeholder 1">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g1)"/>
+  <rect x="40" y="40" width="720" height="920" rx="40" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)"/>
+  <circle cx="610" cy="240" r="140" fill="rgba(255,255,255,0.12)"/>
+  <path d="M220 700 C330 450, 500 430, 620 700" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity="0.85"/>
+  <text x="120" y="160" fill="#fff" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Smiley Events</text>
+  <text x="120" y="235" fill="#fde68a" font-size="28" font-family="Segoe UI, Arial, sans-serif" letter-spacing="4">MADURAI</text>
+  <text x="120" y="820" fill="#fff" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Elegant Stage Design</text>
+</svg>

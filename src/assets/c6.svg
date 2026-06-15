@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Smiley Events gallery placeholder 6">
+  <defs>
+    <linearGradient id="g6" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="45%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#bef264"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g6)"/>
+  <rect x="40" y="40" width="720" height="920" rx="40" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.30)"/>
+  <path d="M120 700 C260 500, 540 500, 680 700" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <text x="120" y="160" fill="#fff" font-size="52" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Grand Entrance</text>
+  <text x="120" y="820" fill="#ecfdf5" font-size="36" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Luxury Decor</text>
+</svg>
